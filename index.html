@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"  rel="stylesheet" > 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+     
+     .navbar {
+  
+  position: fixed;
+  height: 100px;
+  top: 0;
+  color: white;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+.navbar a {
+  transition: color 0.3s ease-in-out; /* add transition effect */
+  color: white; /* initial link color */
+}
+.navbar logo{
+  
+  height: 50px;
+}
+.navbar.scrolled {
+  background-color: white;
+}
+.navbar.scrolled a {
+  color: black;
+}
+.navbar.scrolled logo{
+  height:50px;
+}
+.overlay{
+  position: absolute; 
+  width: 100%; 
+  height: 770px; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); 
+  
+}
+.al{
+       
+       margin-top: 80px;
+       margin-left: 400px;
+       font-size: 35px;
+     }
+     .i{
+       float: right;
+       margin-right: 400px;
+       margin-top: 70px;
+       position: relative;
+       
+     }
+     .g{
+       margin-left: 150px;
+       margin-top: 50px;}
+       .j{
+          margin-top:30px ;
+          margin-left:270px ;
+          font-size: 35px;
+        }
+        .h{
+          font-family: ""Roboto Condensed"" !important;
+          font-size: 50px;
+          margin-top: 270px;
+          margin-left: 140px;
+          line-height: 0.5em;
+          color: white;
+        }
+        .h2{
+          font-family: "sora" !important;
+          margin-left: 140px;
+          line-height: 0.2em;
+          font-size: 30px;
+          color: white;
+        }
+        .bd{
+          width: 1330px;
+          background-color: #f8f9fa;
+          border: 5px solid #f8f9fa;
+          margin: 50px;
+          padding: 50px 50px 200px  50px;
+          
+        }
+        .grid
+        {
+          margin-top: 100px;
+          display: grid;
+          grid-template-columns: 1fr 15fr 1fr;
+         column-gap: 50px;
+        }
+        .grid2{
+          margin-top: 100px;
+          display: grid;
+          grid-template-columns: 1fr 20fr 1fr;
+         column-gap: 50px;
+        }
+    </style>
+</head>
+<body> 
+  <video width="100%" height="100%" autoplay="" muted="" loop="" playsinline="" >
+    <source src="assets\Aquasat.mp4" type="video/mp4">
+  </video>
+  
+  <div class="overlay">
+    <div class="h"><p><b>Full-stack Aquaculture</b></p><br>
+      <p><b>Tech Platform</b></p></div><br>
+      <div class="h2"><p>Using AI & Satellite Remote Sensing to</p><br><br>
+      <p>bring transparency and efficiency to the</p><br>
+      <p>aquaculture value chain</p></div>
+      
+      </div>
+  </div>
+  <nav class ="navbar navbar a  ">
+    <a class="navbar-brand" href="#" id="logo">
+ <img    style="margin-left: 35px ; "  src="assets\Aquaconnect_logo_white.svg" height="50" alt="logo" id="logo-img">&nbsp;<br>  
+    </a>
+  <a style="margin-top: 15px; font-size: large; margin-left: 170px ;" href="#What We Do"><b>What We Do</b></a>
+  <a style="margin-top: 15px; font-size: large;" href="#"> <b>Global</b></a>
+  <a style="margin-top: 15px; font-size: large;" href="#"> <b>News</b></a>
+  <a style="margin-top: 15px; font-size: large;margin-right: 50px; " href="#"> <b>Careers</b></a>
+  </nav>
+  <div class="i"><img   src="assets\Disney hotstar logo.png" height="60" ></div>
+ <div class="al"> 
+  <p><b>Watch Our Story on</b></p>
+  </div>
+   <div class="g"><video poster="assets\Aquaconnect-The-Great-Indian-.png" height="600" controls>
+    <source src=""
+   </video></div>
+   <center><p style="font-size: 35px; margin-top:100px ;"><b>Building India's Largest Aquaculture Market Place</b></p></center><br>
+    <div class="j"> <img  src="assets\Aquaconnect-Ecosystem.svg" height="250" ></div>
+    <div class="bd">
+      <section id="What We Do">
+        <center> <h2><b>What We Do</b></h2></center>
+       </section>
+       <div class="grid">
+      <img style="margin-left: 50px;" src="assets\Aquasat.gif" height="400">
+      
+    
+      <p ><img src="assets\Aquasat-Logo (1).svg" style="width: 150px;"><br>
+       <span style="font-size:30px ;"> <b>Combining “boots on the ground” and “eyes in the sky”</b></span><br><br>
+      
+        <span style="font-size: 18px;">Aquasat uses Artificial Intelligence and Satellite remote sensing to bring transparency and
+        efficiency into the aquaculture value chain. Geospatial data, powered by deep learning models, allows us
+        to
+        democratize pond boundaries, validate between fish &amp; shrimp ponds, and predict the days of culture.
+        These intelligence enable us to predict the demand for farm inputs and the supply of harvest produce,
+        scaling from the individual pond level to the village, and even the national level.
+      </span>
+    </div>
+   
+          <img style="margin-left: 710px; "src="assets\check.svg" width="16">
+       
+          <span style="margin-left: 10px; ">Input demand prediction</span>
+        
+      
+          <img style="margin-left: 50px;"src="assets\check.svg" width="16">
+       
+          <span style="margin-left: 10px;">Harvest supply prediction</span><br><br>
+        
+      
+          <img style="margin-left: 710px; "src="assets\check.svg" width="16">
+       
+          <span  style="margin-left: 10px;">Real time monitoring</span>
+         <img style="float: right;margin-top:100px ;margin-left: 50px;"  src="assets\Aquapartner.png" alt="" height="350">  
+     
+     
+     <p><img style="margin-top:100px ;" src="assets\Aquapartner-Logo.svg" alt="" height="40"> <br>
+      
+      <span style="font-size:40px ;;"> <b>One-stop shop for all your aquaculture needs</b></span><br><br>
+        <span style="font-size: 18px;">Our Aquapartner® stores serve as the last-mile touchpoint for connecting with
+           farmers in the vicinity of farms. These stores, run by our retail partners, help farmers buy high-quality, 
+           innovative farm inputs from multiple brands. We also provide our retail partners with access to formal credit 
+           and efficient service delivery to expand their businesses.
+      </span></p>
+      <img style="margin-left: 10px; "src="assets\check.svg" width="16">
+       
+          <span style="margin-left: 10px; ">Multi-brand access</span>
+        
+      
+          <img style="margin-left: 20px;"src="assets\check.svg" width="16">
+       
+          <span style="margin-left: 10px;">Overnight delivery</span><br><br>
+        
+      
+          <img style="margin-left: 10px; "src="assets\check.svg" width="16">
+       
+          <span  style="margin-left: 10px;">Formal credit</span>
+        
+     
+     
+   
+    <div class="grid">
+      <img style="margin-left: 50px;margin-bottom: 100px;"src="assets\Aquabazar.png" style="width: 150px;" height="350" width="550">
+      
+      
+    
+      <p ><img style="margin-left: 50px;" src="assets\Aquabazaar.svg" height="50"><br>
+       <span style="font-size:30px ;"> <b>Matching supply with demand efficiently</b></span><br><br>
+      
+        <span style="font-size: 18px;">Aquabazaar® enables transparency in post-harvest market linkage activity. 
+          We match farmers with a wider range of potential processors/buyers through direct linkages. This helps 
+          farmers realize greater value for their produce and helps buyers with reliable sourcing solutions.
+      </span><br><br>
+    
+   
+          <img src="assets\check.svg" width="16">
+       
+          <span style="margin-left: 10px; ">Efficient sourcing</span>
+        
+      
+          <img src="assets\check.svg" width="16">
+       
+          <span style="margin-left: 10px;">Formal credit</span><br><br>
+        
+      
+          <img src="assets\check.svg" width="16">
+       
+          <span  style="margin-left: 10px;">Market linkage</span>
+         
+        </div>
+        <img style="float: right;margin-left: 50px;"  src="assets\Aquacred-Journey.svg" alt="" height="350">  
+        <p><img  src="assets\Aquacred-Logo.svg" alt="" height="40"> <br>
+         
+         <span style="font-size:40px ;;"> <b>Enabling formal credit</b></span><br><br>
+           <span style="font-size: 18px; ">Aquacred® bridges the gap between aquaculture stakeholders and financial institutions to access formal credit. The program enables our Aquapartners and the Seafood buyers to access formal credit to support their working capital needs and upscale their businesses.
+         </span></p>
+               
+     </div>
+     <center><p style="font-size: 30px;"><b>Strengthening our Presence in</b></p></center>
+
+     <center><p style="font-size: 30px;"><b>7 States & Counting…</b></p></center>
+    <center><img src="assets\Desktopmap.svg" height="400"></center> 
+    <center><p style="font-size:30px ; margin-top: 100px;"><b>Our investors</b></p></center><br><br>
+    <center><a href="https://www.omnivore.vc/"> <img src="assets\omnivore1.png" height="40"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="https://www.hatch.blue/"> <img src="assets\hatch1.png" height="40"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a  href="https://flourishventures.com/" > <img src="assets\flourish1.png" ></a>
+    </center><br><br>
+    <center><a  href="https://rebrightpartners.com/" ><img src="assets\rebright1.png" ></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a  href="https://agfunder.com/" ><img src="assets\agfunder1.png" ></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a  href="https://www.lokcapital.com/" ><img src="assets\lokcapital1.png" ></a>
+    </center><br><br>
+    <center>
+      <a  href="https://www.s2gventures.com/" ><img src="assets\s2gventures.png" ></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a  href="https://www.ldc.com/" ><img src="assets\ldc1.png" > </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a  href="http://www.sun-8.jp/profile-e" ><img src="assets\suneight1.png" ></a>
+    </center><br><br>
+     <center><a  href="https://www.linkedin.com/company/6g-capital/about/" ><img src="assets\capital1.png" >
+    </a></center>
+    <center><p style="font-size: 30px; margin-top: 100px;margin-bottom: 50px;"><b>Awards & Recognitions</b></p></center>
+    
+      <a href="https://www.greatplacetowork.in/great/company/coastal-aquaculture-research-institute-pvt-ltd" >
+      <img style="margin-left: 300px;height: 70px;" src="assets\GPTW_2024_Mobile.svg"  /></a>
+  
+    <a href="https://www.startupindia.gov.in/content/dam/invest-india/Templates/public/Winners%20of%20Fisheries%20Startup%20Grand%20Challenge_30.12.2022_Final.pdf">
+      <img style="margin-left:100px;height: 70px;"   src="assets\Fisheries-Grand-Challenge.svg"  /></a>
+  
+ 
+    <a href="https://parispeaceforum.org/projects/global-full-stack-aquaculture-platform/">
+      <img style="margin-left:100px; height: 70px" src="assets\forumpeace.png"   /></a>
+  
+ 
+    <a href="https://www.indexinsuranceforum.org/publication/agriculture-insuretech-innovation-challenge-winner-aquaconnect">
+      <img style="margin-left:100px;height: 70px;" src="assets\global-index.png"  /></a><br><br>
+    
+ 
+    <a href="https://www.googblogs.com/introducing-class-5-of-the-google-for-startups-accelerator-india/" >
+    <img  style="margin-left:200px;height: 70px;" src="assets\google_accelerator2021.svg"  /></a>
+  
+ 
+    <a href="https://www.iso.org/home.html" >
+    <img style="margin-left:80px;height: 70px;" src="assets\iso.png"  /></a>
+  
+    <a href="https://startupsuccessstories.in/indias-own-aquaman-wins-innovator-award-artificial-intelligence-technology-positive-impact-aqua-farmers/">
+    <img style="margin-left:150px;height: 70px;" src="assets\seafood1.png"  /></a>
+  
+ 
+    <a href="https://www.fastcompany.com/90492176/world-changing-ideas-awards-2020-ai-and-data-finalists-and-honorable-mentions">
+    <img style="margin-left:100px;height: 70px" src="assets\worldchange.png"   /></a><br><br>
+ 
+ 
+    <a href="https://nasscom.in/ai-gamechangers2021/pdf/AI-Gamechangers0582021.pdf" >
+    <img style="margin-left:300px;height: 70px" src="assets\nasscom.svg"   /></a>
+ 
+    <a href="https://indiaai.gov.in/" >
+    <img style="margin-left:100px;height: 70px;" src="assets\india_ai.png"  /></a>
+
+    <a href="https://ficci.in/public/storage/events/25880/ISP/winners-list.pdf" >
+      <img style="margin-left:100px;height: 70px;" src="assets\agri-startup.svg"  /></a>
+ 
+    <a href="https://cdn-microsites.indianexpress.com/storage/files/063608abcc9c38f633fe.pdf">
+     <img style="margin-left:100px;height: 50px;" src="assets\futech1.svg"  /></a><br><br>
+
+
+ 
+    <a href="https://www.youtube.com/watch?v=9D5hX0jlLkI&t=1419s" >
+      <img style="margin-left:300px;height: 70px;" src="assets\innovation_awards.png"  style="height: 80px" /></a>
+  
+ 
+    <a href="https://www.entrepreneurindia.com/2021/award-winners.php" >
+      <img style="margin-left:100px;height: 70px;" src="assets\best_social_impact2021.svg"  /></a>
+
+ 
+    <a href="https://technode.global/2021/05/18/how-aquaconnect-is-improving-aquaculture-through-ai-iot-and-better-access-to-financial-services-origin-innovation-awards-qa/">
+      <img style="margin-left:100px;height: 70px;" src="assets\origin.png"  /></a>
+ 
+     <a href="https://nasscom.in/emerge50/Emerge50_Award_Booklet.pdf" >
+      <img style="margin-left:100px;height: 70px;" src="assets\nasscom.png"  /></a>
+
+      <center><p style="font-size:30px;margin-top:150px ;margin-bottom:100px"><b>Spotlights</b></p></center>
+
+
+    
+
+        <script>
+         const navbar = document.querySelector('.navbar');
+      
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+          navbar.classList.add('scrolled');
+          
+        } else {
+          navbar.classList.remove('scrolled');
+          
+        }
+      });
+      window.addEventListener('scroll', function() {
+    const logoImg = document.getElementById('logo-img');
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (window.scrollY > 0) { 
+      logoImg.src = 'assets\loo.png';
+    } else {
+      logoImg.src = 'assets\Aquaconnect_logo_white.svg';
+    }
+  });
+   </script>
+        
+</body>
+
+
+</html>
