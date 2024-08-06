@@ -1,0 +1,201 @@
+.navbar {
+  
+  position: fixed;
+  height: 100px;
+  top: 0;
+  color: white;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+  
+}
+.navbar a {
+  transition: color 0.3s ease-in-out; 
+  color: white; 
+  margin-top: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 40px;
+}
+
+.logoImage{
+  margin-top: 0px;
+  width: 300px;
+  height: 50px;
+}
+
+.navbar.scrolled {
+  background-color: white;
+  height: 100px;
+}
+.navbar.scrolled a {
+  
+  color: black;
+}
+.image-container{
+  text-align: right;
+}
+.h{
+  position: absolute;
+  font-family: ""Roboto Condensed"" !important;
+  font-size: 4vw;
+  margin-top: 300px;
+  margin-left: 40px;
+  line-height: 0.5em;
+  color: white;
+} 
+.sz{
+  position: absolute;
+  font-family: "sora" !important;
+  margin-left: 40px;
+  margin-top: 400px;
+  line-height: 0.1em;
+  font-size: 2vw;
+  color: white;
+}
+.fts{
+       
+  margin-top: 40px;
+  margin-left: 500px;
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+.bd{
+  width: 1280px;
+  background-color: #f8f9fa;
+  border: 5px solid #f8f9fa;
+  margin: 20px;
+  padding: 50px 50px 200px  50px;
+  
+}
+.logo {
+  background-image: url('assets\Aquaconnect-Ecosystem.svg');
+  width: 200px;
+  height: 100px;
+}
+
+.carousel-indicators button {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  
+  cursor: pointer;
+}
+
+.carousel-indicators button.active {
+  background-color: blue;
+}
+
+
+ @media screen and (max-width:791px) {
+  .logo {
+    background-image: url('assets\Aquaconnect-Ecosystem-Mobile.svg');
+    width: 100px;
+    height: 50px;
+  }
+  .bd{
+    width: 460px;
+    background-color: #f8f9fa;
+    border: 5px solid #f8f9fa;
+    margin: 30px;
+    padding: 10px 10px 10px  20px;
+    
+  }
+  .navbar {
+  
+    position: fixed;
+    height: 50px;
+    top: 0;
+    color: white;
+    width: 100%;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out;
+    background-image: url('assets\loo.png');
+  }
+ 
+  .logoImage{
+    width: 150px;
+    height: 20px;
+   margin: 0px;
+   
+  }
+  
+  .navbar a {
+    transition: color 0.3s ease-in-out; 
+    color: black; 
+    margin-top: 10px;
+    font-size: 10px;
+    text-decoration: none;
+   
+  }
+  .h{
+    position: absolute;
+    font-family: ""Roboto Condensed"" !important;
+    
+    margin-top: 130px;
+    margin-left: 20px;
+    line-height: 0.2em;
+    color: white;
+  } 
+  .sz{
+    position: absolute;
+    font-family: "sora" !important;
+    margin-left: 20px;
+    margin-top: 160px;
+    line-height: 1%;
+    
+    color: white;
+  }
+  .ig{
+    height: 50px;
+    width: 50px;
+  }
+  .fts{
+       
+    margin-top: 20px;
+    margin-left: 70px;
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+  
+}
+
+.ic{
+  float: right;
+}
+.ic img{
+  width: 500px;
+  height: 300px;
+  margin-left: 100px;
+}
+.image-container{
+  float: left;
+ 
+
+}
+
+.image-container img {
+  width: 500Px; 
+  height: 350px; 
+ margin-right: 100px;
+}
+
+
+
+@media  screen and (max-width: 768px) {
+  .image-container img {
+    width: 100%;
+    height: auto;
+
+  
+}
+.ic img{
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+}
+.ic{
+  text-align: center;
+}
+}
