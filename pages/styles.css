@@ -15,6 +15,7 @@
   font-size: 20px;
   text-decoration: none;
   margin-top: 40px;
+  margin-left: 15%;
 }
 
 .logoImage{
@@ -89,13 +90,23 @@
 
 
  @media screen and (max-width:791px) {
+ 
+  .navbar-toggler {
+   
+    margin-right: 150px;
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: transparent;
+   
+}
+ 
   .logo {
     background-image: url('assets\Aquaconnect-Ecosystem-Mobile.svg');
     width: 100px;
     height: 50px;
   }
   .bd{
-    width: 460px;
+    width: 440px;
     background-color: #f8f9fa;
     border: 5px solid #f8f9fa;
     margin: 30px;
@@ -110,6 +121,7 @@
     color: white;
     width: 100%;
     background-color: white;
+    gap: 10px;
     transition: background-color 0.3s ease-in-out;
     background-image: url('assets\loo.png');
   }
@@ -123,11 +135,11 @@
   
   .navbar a {
     transition: color 0.3s ease-in-out; 
-    color: black; 
+    color:white; 
     margin-top: 10px;
     font-size: 10px;
     text-decoration: none;
-   
+    margin-left:50px ;
   }
   .h{
     position: absolute;
