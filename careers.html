@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+  <style>
+    .carousel-indicators button {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  
+  cursor: pointer;
+}
+.lo {
+  transition: opacity 10000s ease-in-out;
+}
+
+.scrolled .lo {
+opacity: 0;
+}
+
+.scrolled .lo + source {
+srcset: url('./assets/loo.png');
+}
+
+.scrolled .lo[src] {
+content: url('assets/loo.png');
+}
+
+
+.navbar.scrolled {
+  background-color: white;
+  height: 100px;
+}
+.navbar.scrolled a {
+  
+  color: black;
+}
+
+.carousel-indicators button.active {
+  background-color: blue;
+}
+    .position{
+        position: absolute;
+        color:white;
+        
+    
+        height: auto;
+      
+       margin-top: 200px;
+    }
+    .posi{
+        position: absolute;
+        border: 1px solid black;
+        background-color:lightgray ;
+        text-decoration: none;
+        margin-left:40% ;
+        margin-top: 35%;
+        color: white;
+        padding: 1%;
+        border-radius: 5%;
+    }
+   
+    @media screen and (max-width:798px) {
+        .position{
+        position: absolute;
+        color:white;
+    }
+    
+    .posi{
+        position: absolute;
+        border: 1px solid black;
+        background-color:lightgray ;
+        text-decoration: none;
+        margin-left:30% ;
+        margin-top: 40%;
+        color: white;
+        padding: 1%;
+        border-radius: 5%;
+    }
+    }
+  </style>  
+</head>
+<body>
+   
+    <img style="position: absolute;" src="assets\Career banner new.jpg"  width="100%">
+    <img style="position: absolute; margin-left: 10px;margin-top: 10px;" src="assets\Aquaconnect_logo_white.svg" height="8%" width="20%" class="lo">
+ 
+        <p class="position" style="margin-left:40% ; margin-top:15%;font-size:2vw"> AT AQUACONNECT</p>
+        <p class="position" style=" margin-left:45% ;margin-top:20%; font-size:2vw">
+            <b>Join Us</b>
+          </p>
+        <p class="position" style="margin-left:30% ; margin-top:25%;font-size:2vw">
+          Take the next step in your professional journey.<br />
+          Browse our current job openings and apply now.
+        </p>
+        <a class="posi" role="button" class="btn btn-light open-positions px-md-5 px-3 py-2 mt-md-5 mt-2" href="#open-positions">
+          <b>CURRENT OPENINGS</b>
+        </a>
+    
+
+
+ 
+  <div class="container">
+    <div class="text-center py-5">
+      <p  style="margin-top: 60%;" class="fs-1 fw-bold pt-5">Let's Grow Together</p>
+      <p class="fs-3 mb-0">
+        Join our team of smart, fun, curious and creative people who are
+        excited to help build a platform that empowers the future.
+      </p>
+    </div>
+
+    <div class="py-5" id="open-positions">
+      <p class="fs-1" style="font-weight: 600">Open Positions</p>
+
+      <div class="accordion accordion-flush border" id="accordionCareers">
+        <div class="accordion-item">
+          <div class="accordion-header" id="technology-heading">
+            <button class="accordion-button bg-light fs-4 d-flex align-items-center" type="button"
+              data-bs-toggle="collapse" data-bs-target="#technology" aria-expanded="true" aria-controls="technology"
+              style="font-weight: 600">
+              <div class="flex-grow-1">Roles</div>
+              <div class="d-flex flex-nowrap align-items-center flex-shrink-0">
+                <p class="mb-0" style="font-weight: 600; display: inline !important">
+                  [4]
+                </p>
+              </div>
+            </button>
+          </div>
+
+         
+
+          <div id="technology" class="accordion-collapse collapse show" aria-labelledby="technology-heading"
+            data-bs-parent="#accordionCareers">
+            <div class="accordion-body">
+              <div class="d-flex flex-row flex-wrap justify-content-end align-items-center fs-5">
+                <div class="flex-fill">
+                  <p class="mb-0" style="font-weight: 600">
+                    Visual Designer
+                  </p>
+                  <p>
+                    Full-Time &nbsp;|&nbsp; 3-5 Years &nbsp;|&nbsp; Chennai &nbsp;|&nbsp;
+                    <br class="d-md-none" />Posted on: 18th Jun 2024
+                  </p>
+                </div>
+                <a href="Visual Designer_jd.html" type="button" class="btn btn-outline-dark">Apply Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="technology" class="accordion-collapse collapse show" aria-labelledby="technology-heading"
+            data-bs-parent="#accordionCareers">
+            <div class="accordion-body">
+              <div class="d-flex flex-row flex-wrap justify-content-end align-items-center fs-5">
+                <div class="flex-fill">
+                  <p class="mb-0" style="font-weight: 600">
+                    Area Sales Manager - Aquaculture Inputs
+                  </p>
+                  <p>
+                    Walk-In &nbsp;|&nbsp; 7+ Years &nbsp;|&nbsp; Andhra Pradesh &nbsp;|&nbsp;
+                    <br class="d-md-none" />Posted on: 18th Jun 2024
+                  </p>
+                </div>
+                <a href="Area Sales Manager_jd.html" type="button" class="btn btn-outline-dark">Apply Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="technology" class="accordion-collapse collapse show" aria-labelledby="technology-heading"
+            data-bs-parent="#accordionCareers">
+            <div class="accordion-body">
+              <div class="d-flex flex-row flex-wrap justify-content-end align-items-center fs-5">
+                <div class="flex-fill">
+                  <p class="mb-0" style="font-weight: 600">
+                    Sales Officer
+                  </p>
+                  <p>
+                    Walk-In &nbsp;|&nbsp; 2+ Years &nbsp;|&nbsp; Andhra Pradesh &nbsp;|&nbsp;
+                    <br class="d-md-none" />Posted on: 18th Jun 2024
+                  </p>
+                </div>
+                <a href="Sales Officer_jd.html" type="button" class="btn btn-outline-dark">Apply Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="technology" class="accordion-collapse collapse show" aria-labelledby="technology-heading"
+            data-bs-parent="#accordionCareers">
+            <div class="accordion-body">
+              <div class="d-flex flex-row flex-wrap justify-content-end align-items-center fs-5">
+                <div class="flex-fill">
+                  <p class="mb-0" style="font-weight: 600">
+                    Senior Sales Officer
+                  </p>
+                  <p>
+                    Walk-In &nbsp;|&nbsp; 5+ Years &nbsp;|&nbsp; Andhra Pradesh &nbsp;|&nbsp;
+                    <br class="d-md-none" />Posted on: 18th Jun 2024
+                  </p>
+                </div>
+                <a href="Senior_Sales Officer_jd.html" type="button" class="btn btn-outline-dark">Apply Now</a>
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+
+  <div style="background-color: #f9f9f9">
+    <div class="container">
+      <div class="text-center py-5" style="background-color: #f9f9f9">
+        <p class="fs-1 fw-bold">
+          No relevant positions that match your profile?
+        </p>
+        <p class="fs-2 mb-0">
+          If you are keen to be part of Aquaconnect journey, send your resume
+          to
+          <br />jobs@aquaconnect.blue<br />
+          Who knows? An opening might turn up tomorrow.
+        </p>
+      </div>
+    </div>
+  </div>
+  <center><p style="font-size:3vw ;">Life at Aquaconnect</p></center>
+  <div class="container py-5" id="news">
+                  
+    <div id="carouselExampleIndicators" class="carousel slide"  >
+     
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12" style="width: 280px;">
+           
+              <img src="assets\1carosel.jpg" class="d-block w-100" alt="..."></a>
+            </div>
+            <div  class="col-lg-3 col-md-6 col-sm-12" style="width: 280px;">
+             
+              <img src="assets\Photo 1.png" class="d-block w-100" alt="..."></a>
+            </div>
+            <div  class="col-lg-3 col-md-6 col-sm-12" style="width: 280px;">
+              
+              <img  src="assets\Photo 7.jpg" class="d-block w-100" alt="..."></a>
+            </div>
+            <div  class="col-lg-3 col-md-6 col-sm-12"style="width: 280px;">
+              
+              <img  src="assets\carosel3 (1).jpg" class="d-block w-100" alt="..."></a>
+            </div>
+          </div>
+        </div>
+          <div class="carousel-item ">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12" style="width: 280px;">
+               
+                <img src="assets\carosel3.jpg" class="d-block w-100" alt="..."></a>
+              </div>
+              <div  class="col-lg-3 col-md-6 col-sm-12" style="width: 280px;">
+               
+                <img src="assets\Photo 3.png" class="d-block w-100" alt="..."></a>
+              </div>
+              <div  class="col-lg-3 col-md-6 col-sm-12" style="width: 280px;">
+              
+                <img src="assets\Image (2).jpg" class="d-block w-100" alt="..."></a>
+              </div>
+              <div  class="col-lg-3 col-md-6 col-sm-12" style="width: 280px;">
+                
+                <img src="assets\life10.png" class="d-block w-100" alt="..."></a>
+              </div>
+        </div>
+          </div></div>
+          <div class="carousel-indicators">
+            <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+    </div>
+</div>
+    
+ 
+
+  <div class="container-fluid bg-light pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 d-flex align-items-center">
+          <div >
+            <iframe style="float: left;margin-right:15px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.828962588339!2d80.24946077425464!3d12.982789014634525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267988cebce21%3A0xba1b1e30ec6e6fd1!2sAquaconnect!5e0!3m2!1sen!2sin!4v1723009035600!5m2!1sen!2sin" 
+                                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                   
+          </div>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div>
+                <b>Aquaconnect - HQ</b><br />
+                <p class="py-2">
+                  Type II/17, Dr.VSI Estate, Thiruvanmiyur, Chennai,
+                  Tamilnadu - 600041
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div>
+                <b>Andhra Pradesh - HQ</b><br />
+                <p class="py-2">
+                  No. 241/2,242/2, Padugupadu Village,
+                  Sri Potti Sriramulu Dist, Nellore - 524137
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div>
+                <b>Odisha - HQ</b><br />
+                <p class="py-2">
+                  No: 753/2021, Tarini Vihar, Raghunathpur, Bhubaneshwar Dist, Khorda -
+                  751024
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-md-4">
+              <b>Coastal Aquaculture Research Institute Pvt. Ltd.</b>
+              <p class="py-2">
+                CIN: U74999TN2017PTC116191<br />Grievances contact: gr.support@aquaconnect.blue
+              </p>
+            </div>
+            <div class="col-12 col-md-4">
+              <b>Get in touch</b>
+              <p class="py-2">
+                Toll Free: 1800 123 1263<br />Mobile: +91 72999 10993<br />Email:
+                info@aquaconnect.blue
+              </p>
+            </div>
+            <div class="col-12 col-md-4">
+              <b>Follow Us on</b>
+              <p class="py-1">
+                <a rel="nofollow" class="btn btn-padding" href="https://www.facebook.com/aquaconnect.blue"
+                  target="_blank">
+                  <img src="./assets/images/footer-fb-mouseout.svg"
+                    data-mouseover="./assets/images/footer-fb-mouseover.svg"
+                    data-mouseout="./assets/images/footer-fb-mouseout.svg" class="footer-social-icons" />
+                </a>
+                <a rel="nofollow" class="btn btn-padding" href="https://www.linkedin.com/company/aquaconnect1/"
+                  target="_blank">
+                  <img src="./assets/images/footer-linkedin-mouseout.svg"
+                    data-mouseover="./assets/images/footer-linkedin-mouseover.svg"
+                    data-mouseout="./assets/images/footer-linkedin-mouseout.svg" class="footer-social-icons" />
+                </a>
+                <a rel="nofollow" class="btn btn-padding" href="https://twitter.com/Aqua_Connect" target="_blank">
+                  <img src="./assets/images/twitter-primary.svg" data-mouseover="./assets/images/twitter.svg"
+                    data-mouseout="./assets/images/twitter-primary.svg" class="footer-social-icons" />
+                </a>
+                <a rel="nofollow" class="btn btn-padding" href="https://www.instagram.com/aquaconnect_blue/"
+                  target="_blank">
+                  <img src="./assets/images/footer-insta-mouseout.svg"
+                    data-mouseover="./assets/images/footer-insta-mouseover.svg"
+                    data-mouseout="./assets/images/footer-insta-mouseout.svg" class="footer-social-icons" />
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+      <div class="row py-3">
+        <div class="col-12 col-md-6">
+          <a href="" class="text-decoration-none text-dark txtcentermob" target="_blank">
+            Copyright © 2024 All Rights Reserved.
+          </a>
+        </div>
+        <div class="col-12 col-md-6 txtcentermob" style="text-align: right">
+          <a href="./privacy_policy.html" style="text-align: right; color: #0047bb" target="_blank">
+            Privacy & Policy
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const navbar = document.querySelector('.navbar');
+ 
+ window.addEventListener('scroll', () => {
+   if (window.scrollY > 0) {
+     navbar.classList.add('scrolled');
+     
+   } else {
+     navbar.classList.remove('scrolled');
+     
+   }
+ });
+ </script>
+</body>
+
+</html>
