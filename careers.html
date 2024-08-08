@@ -19,30 +19,17 @@
   
   cursor: pointer;
 }
-.lo {
-  transition: opacity 10000s ease-in-out;
-}
-
-.scrolled .lo {
-opacity: 0;
-}
-
-.scrolled .lo + source {
-srcset: url('./assets/loo.png');
-}
-
-.scrolled .lo[src] {
-content: url('assets/loo.png');
-}
 
 
-.navbar.scrolled {
-  background-color: white;
-  height: 100px;
-}
-.navbar.scrolled a {
+
+.carousel-indicators button {
+  background-color: black;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
   
-  color: black;
+  cursor: pointer;
 }
 
 .carousel-indicators button.active {
@@ -68,8 +55,32 @@ content: url('assets/loo.png');
         padding: 1%;
         border-radius: 5%;
     }
+    .navbar a {
+   display: none;
+  }
    
     @media screen and (max-width:798px) {
+      .navbar {
+  
+  position: fixed;
+  height: 50px;
+  top: 0;
+  color: white;
+  width: 100%;
+  background-color: white;
+  gap: 10px;
+  transition: background-color 0.3s ease-in-out;
+ 
+}
+.navbar a {
+    transition: color 0.3s ease-in-out; 
+    color:white; 
+    margin-top: 10px;
+    font-size: 10px;
+    text-decoration: none;
+    margin-left:50px ;
+    display: block;
+  }
         .position{
         position: absolute;
         color:white;
@@ -90,10 +101,24 @@ content: url('assets/loo.png');
   </style>  
 </head>
 <body>
-   
-    <img style="position: absolute;" src="assets\Career banner new.jpg"  width="100%">
-    <img style="position: absolute; margin-left: 10px;margin-top: 10px;" src="assets\Aquaconnect_logo_white.svg" height="8%" width="20%" class="lo">
+ <nav class="navbar fixed-top  navbar-expand-lg" >
+    <div class="container-fluid">
+      <picture>
+        <source srcset="./assets/loo.png" media="(max-width: 798px)" height="30">
+        <img src="assets\Aquaconnect_logo_white.svg" alt="Large image" height="50" class="lo">
+      </picture>
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <a  href=""><b>Perks & Benefits</b></a>
+     
+        <a href=""><b>Company website</b></a>
  
+</nav>
+    <img style="position: absolute;" src="assets\Career banner new.jpg"  width="100%">
+   
         <p class="position" style="margin-left:40% ; margin-top:15%;font-size:2vw"> AT AQUACONNECT</p>
         <p class="position" style=" margin-left:45% ;margin-top:20%; font-size:2vw">
             <b>Join Us</b>
