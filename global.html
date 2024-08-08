@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+   
+    <style>
+       .image-row {
+  overflow: hidden; 
+}
+
+.image-row figure {
+  float: left; 
+  margin: 5px;
+  width: 390px; 
+}
+
+.image-row figcaption {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+.image-r {
+  overflow: hidden; 
+  margin-left: 200px;
+}
+
+.image-r figure {
+  float: left; 
+  margin: 5px;
+  width: 200px; 
+ 
+}
+
+.image- figcaption {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+}
+
+@media  screen and (max-width: 768px) {
+  .image-row figure {
+    float: none;
+    width: 20%; 
+    margin: 10px 0; 
+  }
+  .image-r figure {
+    float: none;
+    width: 10%; 
+    margin: 10px 0; 
+  }
+  .bd{
+    width: 410px;
+    background-color: #f8f9fa;
+    border: 5px solid #f8f9fa;
+    margin: 30px;
+    padding: 10px 10px 10px  20px;
+    
+  }
+}
+        .bd{
+  width: 1330px;
+  background-color: rgb(211, 223, 238);;
+  border: 5px solid #f8f9fa;
+  margin: 20px;
+  padding: 50px 50px 200px  50px;
+  
+}
+        .navbar {
+  
+ 
+  height: 80px;
+  top: 0;
+  color: white;
+  width: 100%;
+ 
+  
+}
+.navbar a {
+ 
+  color: black; 
+  margin-top: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  margin-top: 40px;
+  
+}
+.navbar a:hover{
+    color:blue;
+}
+.scrolling-text {
+    position: fixed;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll 100s linear infinite;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px; 
+  display: inline-block; 
+  color: white;
+  background-color: rgba(255, 0, 0, 0.904);
+  margin-top: 8px;
+  font-weight: bolder;
+  width: 100%;
+
+}
+.align{
+    position: absolute;
+}
+.link a{
+    border: 1px solid black;
+     padding: 1% 5% 1% 5%; 
+     text-decoration: none;
+     color: black;
+     background-color: gray;
+     border-radius: 1%;
+}
+.link a:hover{
+    background-color: blue;
+    color: white;
+}
+@media screen and (max-width:798px) {
+    .image-row img {
+ float: none;
+  width: 100%; 
+  margin: 10px; 
+}
+    .link a{
+    border: 1px solid black;
+     padding: 1px 5px 1px 5px; 
+     text-decoration: none;
+     color: black;
+     background-color: gray;
+     border-radius: 1%;
+     margin-left: 2px;
+}
+.link a:hover{
+    background-color: blue;
+    color: white;
+}
+    
+    .scrolling-text {
+    position: fixed;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll 100s linear infinite;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 1px; 
+  display: inline-block; 
+  color: white;
+  background-color: rgba(255, 0, 0, 0.904);
+  margin-top: 40px;
+
+  width: 100%;
+
+}
+      .navbar {
+  
+  position: fixed;
+  height: 50px;
+  top: 0;
+  color: white;
+  width: 100%;
+  background-color: white;
+  gap: 10px;
+  transition: background-color 0.3s ease-in-out;
+ 
+}
+.navbar a {
+    transition: color 0.3s ease-in-out; 
+    color:white; 
+    margin-top: 10px;
+    font-size: 10px;
+    text-decoration: none;
+    margin-left:50px ;
+    display: block;
+  }
+  .navbar-toggler {
+   
+   margin-right: 150px;
+   line-height: 1;
+   color: var(--bs-navbar-color);
+   background-color: transparent;
+  
+}
+}
+
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar " >
+        <div class="container-fluid">
+            <img src="assets\globallogo.svg" alt="Large image" height="50" >
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+        
+            <a style="margin-left:40% ;" href="index.html"><b>Home</b></a>
+         
+            <a style="margin-left:7% ;"href="#whoweare"><b>Who We Are</b></a>
+         
+            <a style="margin-left:7% ;" href="#forbuyers"><b>For Buyers</b></a>
+       
+            <a style="margin-left:7% ;border: 1px solid black; background-color: rgb(18, 72, 172);padding: 1%;color: white;border-radius: 5%;"  href="#get"><b>Get Today's Quote</b></a>
+         
+     
+    </nav>
+    <div class="scrolling-text">
+        <marquee direction="left" scrollamount="15" scrolldelay="5">  Vannamei: HOSO | HLSO | PD | PUD | PDTO | Easy Peel | Butterfly
+        <span class="mx-4">✦</span>
+       <span><b> Black Tiger: HOSO | HLSO | PD | PUD | PDTO</b></span>
+        <span class="mx-4">✦</span>
+        Pomfrets
+        <span class="mx-4">✦</span>
+        India Mackerel
+        <span class="mx-4">✦</span>
+        Seer Fish
+        <span class="mx-4">✦</span>
+        Yellowfin Tuna
+        <span class="mx-4">✦</span>
+        Skipjack Tuna
+        <span class="mx-4">✦</span>
+        Snappers
+        <span class="mx-4">✦</span>
+        Reef Cod
+        <span class="mx-4">✦</span>
+        Grouper
+        <span class="mx-4">✦</span>
+        Leather Skin
+        <span class="mx-4">✦</span>
+        Ribbon Fish
+        <span class="mx-4">✦</span>
+        Sardine
+        <span class="mx-4">✦</span>
+        Anchovy
+        <span class="mx-4">✦</span>
+        Sole
+        <span class="mx-4">✦</span>
+        Barracuda
+        <span class="mx-4">✦</span>
+        Indian Goat Fish
+        <span class="mx-4">✦</span>
+        Tilapia
+        <span class="mx-4">✦</span>
+        Threadfin Bream
+        <span class="mx-4">✦</span>
+        Grey Mullet
+        <span class="mx-4">✦</span>
+        Lizard fish
+        <span class="mx-4">✦</span>
+        Dolphin fish
+        <span class="mx-4">✦</span>
+        Cuttle fish
+        <span class="mx-4">✦</span>
+        Indian Squid
+        <span class="mx-4">✦</span>
+        Needle Squid
+        <span class="mx-4">✦</span>
+        Octopus
+        <span class="mx-4">✦</span>
+        Whelk
+        <span class="mx-4">✦</span>
+        Crabs
+        <span class="mx-4">✦</span>
+        Lobsters
+        </marquee></div>
+        
+        
+              <p class="align" style="margin-left:40% ; color:white; margin-top:20%; font-size:5vw">
+                Re-imagine<br>  </p>
+                <span class="align" style="margin-left:30% ; color:white; margin-top:25%; font-size:5vw">your seafood sourcing</span>
+            
+              <p class="align" style="margin-left:40% ; color:white; margin-top:31%; font-size:2vw">
+                Just like your food order
+              </p>
+              <a href="#getstarted">
+                <button class="align" style="margin-left:40% ; margin-top:35%;font-size:2vw" type="button" class="text-white animate-text2 bg-[#FF5500] hover:text-[#ffffff] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none">
+                  Get Today's Quote
+                </button>
+              </a>
+           
+          <video style="margin-top: 5%;" width="100%" height="100%" autoplay="" muted="" loop="" playsinline="">
+            <source src="assets\global_video.mp4" type="video/mp4">
+          </video>
+          <center><p style="font-size:3vw; line-height: 1px;margin-top: 10%;"><b>We Are a Global Seafood Trading Platform</b></p></center>
+          <center><p  style="font-size:3vw; color: blue;"><b>100+ &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; 200+ &nbsp; &nbsp; &nbsp; &nbsp;   &nbsp;     45,000,000+
+           <center><p  style="font-size:2vw;line-height: 1px; "><b>Certified Processors &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;Product Options &nbsp; &nbsp; &nbsp; &nbsp; lb of Seafood Transacted
+        </b></p></center>   
+        </b></p></center><br>
+        <center><p style="font-size: 3vw;"><b>Our Products</b></p></center>
+        <center>
+            <div class="link">
+            <a href="#">Fish</a>
+        <a href="#">Shrimp</a>
+        <a href="#">Cephalopods</a>
+        <a href="#">Value Addition</a>
+    </div></center>
+
+
+
+
+    <div class="bd">
+       <center> <p  style="font-size: 3vw;"><b>
+            Source Seafood. Simply</b>
+          </p></center>
+          <center>    <p style="font-size: 2vw;"><b>
+            Start Your Seafood Sourcing With
+            Aquaconnect-Global</b>
+          </p></center>
+          <div class="image-row">
+            <figure>
+              <img src="assets\seasource4.png" alt="Image 1">
+              <figcaption><b>End-to-End</b><br>
+                <b>Assistance</b><br>
+                
+                We take care from finding processors and negotiation to quality audits, logistics, and claim assistance</figcaption>
+            </figure>
+            <figure>
+              <img src="assets\seasource2.png" alt="Image 2">
+              <figcaption><b>Transparent</b><br>
+                <b>Quality Control</b><br>
+                
+                Stringent quality audits for every shipment by our seafood experts & capturing the reports digitally to share updates on real-time.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets\Dashboard.png" alt="Image 3">
+              <figcaption><b>Manage Your Orders, Digitally,</b><br> 
+                <b>Zero Worries</b><br>
+
+                Our dashboard helps you to monitor the order status on real-time till it reaches you</figcaption>
+            </figure>
+          </div>
+         <center> <a href="#getstarted">
+            <button style="background-color:blue;padding:2px 50px 2px 50px; " type="button" >
+              Get Today's Quote
+            </button></a></center>
+        </div>
+      </div>
+      <center><p style="font-size:3vw ;"><br>More reasons to choose us...</p></center>
+      <div class="image-r">
+        <figure>
+          <img src="assets\reason1.png" alt="Image 1">
+          <figcaption>Processor
+            Identification </figure>
+        <figure>
+          <img src="assets\reason2.png "alt="Image 2">
+          <figcaption>Negotiation </figure>
+       
+        <figure>
+            <img src="assets\reason3.png" alt="Image 1">
+            <figcaption>Quality
+                Inspection</figure>
+          <figure>
+            <img src="assets\reason5.png" alt="Image 1">
+            <figcaption>Documentation
+                & Validation </figure>
+                <figure>
+                    <img src="assets\reason4.png" alt="Image 3">
+                    <figcaption>Shipping
+                  </figure>
+      </div>
+    
+    </div>
+  </div>  
+  <img style="float: left;margin-left: 20%;"src="assets\map2.png">
+  <p style="font-size: 3vw; margin-top: 10%;margin-left: 5%;">Gateway to India’s<br>
+    Finest Seafood</p>
+    
+    <span>
+   <img src="assets\tick.png" style="float: left;margin-left: 5%;"> Eliminating the multiple layer of <br> handshakes when comes to seafood sourcing<br><br>
+    
+    
+   <img src="assets\tick.png" style="float: left;margin-left: 5%;"> Directly connecting seafood buyers across<br> the world with Indian processors</span>
+<div style="margin-top:20% ;" class="bd">
+    <center><p style="font-size:3vw ;"><b>We are committed as you are<br>
+        when it comes to quality</b></p></center>
+    <img src="assets\quality.png">
+    <center> <a href="#getstarted">
+        <button style="background-color:blue;padding:2px 50px 2px 50px; margin-top: 5%; " type="button" >
+          Get Today's Quote
+        </button></a></center>
+
+</div>
+<center><img src="assets\support3.png"</center>
+<div class="bd">
+    <center><p style="font-size:3vw ;"><b>Most Recognized<br>
+        Indian Seafood Company Worldwide</b></p></center>
+        <center><p style="font-size:1vw ;">We are recognized by prestigious global institutions for redefining the Indian seafood value chain</p></center>
+</div>
+</body>
+</html>
